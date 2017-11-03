@@ -5,8 +5,8 @@
 test:
 	pytest
 
-# test-coverage:
-# 	pytest --cov={{}} --cov-report html --cov-config .coveragerc
+test-coverage:
+	pytest --cov=src --cov-report html --cov-config .coveragerc
 
 # flake8
 lint:
@@ -18,10 +18,20 @@ lint:
 
 # directories
 DIR_DATA := data
-DIR_BUILD := build
-DIR_BIN := $(DIR_BUILD)/bin
-DIR_BLEND := $(DIR_BUILD)/blend
-DIR_FEATURE := $(DIR_BUILD)/feature
-DIR_METRIC := $(DIR_BUILD)/metric
-DIR_MODEL := $(DIR_BUILD)/model
+DIR_RAW_DATA := $(DIR_DATA)/raw
+DIR_INPUT_DATA := $(DIR_DATA)/input
+DIR_WORKING_DATA := $(DIR_DATA)/working
+DIR_OUTPUT_DATA := $(DIR_DATA)/output
+DIR_FEATURE_DATA := $(DIR_DATA)/feature
 
+DIR_MODEL := models
+
+# load data
+
+# preprocess
+
+# feature
+
+# model
+
+# cleanup
