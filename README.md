@@ -17,6 +17,19 @@ pip install cookiecutter
 cookiecutter https://github.com/ktpr1223/analysis-template
 ```
 
+インストール
+
+``` shell
+# install
+make install
+
+# develop
+make develop
+
+# uninstall
+make uninstall
+```
+
 テスト
 
 ``` shell
