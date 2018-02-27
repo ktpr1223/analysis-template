@@ -1,6 +1,18 @@
+project = {{cookiecutter.project_name}}
+
 # help
 
-## engineering
+
+# install
+install:
+	pip install . --ignore-installed
+
+develop:
+	pip install -e .
+
+uninstall:
+	pip uninstall $(project) -y
+
 # test
 test:
 	pytest
@@ -11,6 +23,10 @@ test-coverage:
 # flake8
 lint:
 	flake8 --exclude=doc,
+
+# clean
+
+
 
 # mypy
 
