@@ -1,6 +1,6 @@
 from setuptools import setup
 
-name = '{{coockiecutter.project_name}}'
+name = '{{cookiecutter.project_name}}'
 
 setup(
     name=name,
