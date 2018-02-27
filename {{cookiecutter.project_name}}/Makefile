@@ -1,6 +1,13 @@
 # help
 
-## engineering
+
+# install
+install:
+	pip install .
+
+develop:
+	pip install -e .
+
 # test
 test:
 	pytest
@@ -11,6 +18,10 @@ test-coverage:
 # flake8
 lint:
 	flake8 --exclude=doc,
+
+# clean
+
+
 
 # mypy
 
