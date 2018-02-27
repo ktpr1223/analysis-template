@@ -1,12 +1,17 @@
+project = {{cookiecutter.project_name}}
+
 # help
 
 
 # install
 install:
-	pip install .
+	pip install . --ignore-installed
 
 develop:
 	pip install -e .
+
+uninstall:
+	pip uninstall $(project) -y
 
 # test
 test:
